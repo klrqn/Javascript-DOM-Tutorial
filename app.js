@@ -1,9 +1,13 @@
-var books = document.querySelectorAll('#book-list li .name');
+const banner = document.querySelector("#page-banner");
 
-Array.from(books).forEach(function(book) {
-	book.textContent += ' (book title)';
-});
+console.log(banner);
+console.log(banner.textContent);
 
-const bookList = document.querySelector("#book-list");
-// bookList.innerHTML = '<h2> books and more books </h2>';
-bookList.innerHTML += '<p> this is how you add html';
+console.log('#page-banner node type is: ' + banner.nodeType);
+console.log('#page-banner node name is: ' + banner.nodeName);
+console.log('#page-banner has child nodes: ' + banner.hasChildNodes()); // boolean
+
+const clonedBanner = banner.cloneNode(true);
+console.log(clonedBanner);
+
+
