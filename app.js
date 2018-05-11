@@ -21,5 +21,22 @@ addForm.addEventListener('submit', function(e) {
 	console.log('default submit reload prevented');
 
 	const value = addForm.querySelector('input[type="text"]').value;
-	console.log(value);
+
+	// create elements
+	const li = document.createElement('li');
+	const bookname = document.createElement('span');
+	const deleteBtn = document.createElement('span');
+
+	// add content
+	deleteBtn.textContent = "delete";
+	bookname.textContent = value;
+	deleteBtn.className = "delete";
+	bookname.className = "name";
+
+	// append to document
+	li.appendChild(bookname);
+	li.appendChild(deleteBtn);
+	list.appendChild(li);
+
 });
+
