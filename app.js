@@ -81,12 +81,13 @@ searchBar.addEventListener('keyup', function(e) {
 const tabs = document.querySelector('.tabs');
 const panels = document.querySelectorAll('.panel');
 tabs.addEventListener('click', (e) => {
+	alert('clicked')
   if(e.target.tagName == 'LI'){
     const targetPanel = document.querySelector(e.target.dataset.target);
-    Array.from(panels).forEach((panel) => {
+    Array.from(panels).forEach((panel) => {  // not shonw in video
       if(panel == targetPanel){
         panel.classList.add('active');
-      }else{
+      } else {
         panel.classList.remove('active');
       }
     });
