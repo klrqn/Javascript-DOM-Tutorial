@@ -44,3 +44,5 @@ addForm.addEventListener('submit', function(e) {
 
 });
 
+// change any attribute
+// .getAttribute .setAttribute .hasAttribute .removeAttribute
