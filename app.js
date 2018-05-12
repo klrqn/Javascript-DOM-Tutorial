@@ -76,6 +76,7 @@ searchBar.addEventListener('keyup', function(e) {
 	});
 });
 
+
 // tabbed content
 const tabs = document.querySelector('.tabs');
 const panels = document.querySelectorAll('.panel');
